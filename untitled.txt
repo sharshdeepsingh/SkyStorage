@@ -1,0 +1,1536 @@
+{
+    "fieldname": "file",
+    "originalname": "pic.jpeg",
+    "encoding": "7bit",
+    "mimetype": "image/jpeg",
+    "fileRef": {
+        "_events": {},
+        "_eventsCount": 0,
+        "metadata": {
+            "kind": "storage#object",
+            "id": "sdrive-cd153.firebasestorage.app/pic192f852e98d.jpeg/1730743041665381",
+            "selfLink": "https://www.googleapis.com/storage/v1/b/sdrive-cd153.firebasestorage.app/o/pic192f852e98d.jpeg",
+            "mediaLink": "https://storage.googleapis.com/download/storage/v1/b/sdrive-cd153.firebasestorage.app/o/pic192f852e98d.jpeg?generation=1730743041665381&alt=media",
+            "name": "pic192f852e98d.jpeg",
+            "bucket": "sdrive-cd153.firebasestorage.app",
+            "generation": "1730743041665381",
+            "metageneration": "1",
+            "contentType": "image/jpeg",
+            "storageClass": "STANDARD",
+            "size": 440747,
+            "md5Hash": "thsOqrzIhY+YfSCRmueoSg==",
+            "crc32c": "mlqAoQ==",
+            "etag": "COXSyKGgw4kDEAE=",
+            "timeCreated": "2024-11-04T17:57:21.670Z",
+            "updated": "2024-11-04T17:57:21.670Z",
+            "timeStorageClassUpdated": "2024-11-04T17:57:21.670Z"
+        },
+        "baseUrl": "/o",
+        "parent": {
+            "_events": {},
+            "_eventsCount": 0,
+            "metadata": {},
+            "baseUrl": "/b",
+            "parent": {
+                "baseUrl": "https://storage.googleapis.com/storage/v1",
+                "apiEndpoint": "https://storage.googleapis.com",
+                "globalInterceptors": [],
+                "interceptors": [],
+                "packageJson": {
+                    "name": "@google-cloud/storage",
+                    "description": "Cloud Storage Client Library for Node.js",
+                    "version": "5.20.5",
+                    "license": "Apache-2.0",
+                    "author": "Google Inc.",
+                    "engines": {
+                        "node": ">=10"
+                    },
+                    "repository": "googleapis/nodejs-storage",
+                    "main": "./build/src/index.js",
+                    "types": "./build/src/index.d.ts",
+                    "files": [
+                        "build/src",
+                        "!build/src/**/*.map"
+                    ],
+                    "keywords": [
+                        "google apis client",
+                        "google api client",
+                        "google apis",
+                        "google api",
+                        "google",
+                        "google cloud platform",
+                        "google cloud",
+                        "cloud",
+                        "google storage",
+                        "storage"
+                    ],
+                    "scripts": {
+                        "predocs": "npm run compile",
+                        "docs": "jsdoc -c .jsdoc.js",
+                        "system-test": "mocha build/system-test --timeout 600000 --exit",
+                        "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                        "preconformance-test": "npm run compile",
+                        "presystem-test": "npm run compile",
+                        "test": "c8 mocha build/test",
+                        "pretest": "npm run compile",
+                        "lint": "gts check",
+                        "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                        "all-test": "npm test && npm run system-test && npm run samples-test",
+                        "check": "gts check",
+                        "clean": "gts clean",
+                        "compile": "tsc -p .",
+                        "fix": "gts fix",
+                        "prepare": "npm run compile",
+                        "docs-test": "linkinator docs",
+                        "predocs-test": "npm run docs",
+                        "benchwrapper": "node bin/benchwrapper.js",
+                        "prelint": "cd samples; npm link ../; npm install",
+                        "precompile": "gts clean"
+                    },
+                    "dependencies": {
+                        "@google-cloud/paginator": "^3.0.7",
+                        "@google-cloud/projectify": "^2.0.0",
+                        "@google-cloud/promisify": "^2.0.0",
+                        "abort-controller": "^3.0.0",
+                        "arrify": "^2.0.0",
+                        "async-retry": "^1.3.3",
+                        "compressible": "^2.0.12",
+                        "configstore": "^5.0.0",
+                        "duplexify": "^4.0.0",
+                        "ent": "^2.2.0",
+                        "extend": "^3.0.2",
+                        "gaxios": "^4.0.0",
+                        "google-auth-library": "^7.14.1",
+                        "hash-stream-validation": "^0.2.2",
+                        "mime": "^3.0.0",
+                        "mime-types": "^2.0.8",
+                        "p-limit": "^3.0.1",
+                        "pumpify": "^2.0.0",
+                        "retry-request": "^4.2.2",
+                        "stream-events": "^1.0.4",
+                        "teeny-request": "^7.1.3",
+                        "xdg-basedir": "^4.0.0",
+                        "uuid": "^8.0.0"
+                    },
+                    "devDependencies": {
+                        "@google-cloud/pubsub": "^2.0.0",
+                        "@grpc/grpc-js": "^1.0.3",
+                        "@grpc/proto-loader": "^0.6.0",
+                        "@types/async-retry": "^1.4.3",
+                        "@types/compressible": "^2.0.0",
+                        "@types/configstore": "^5.0.0",
+                        "@types/date-and-time": "^0.13.0",
+                        "@types/ent": "^2.2.1",
+                        "@types/extend": "^3.0.0",
+                        "@types/mime": "^2.0.0",
+                        "@types/mime-types": "^2.1.0",
+                        "@types/mocha": "^8.0.0",
+                        "@types/mockery": "^1.4.29",
+                        "@types/node": "^16.0.0",
+                        "@types/node-fetch": "^2.1.3",
+                        "@types/proxyquire": "^1.3.28",
+                        "@types/pumpify": "^1.4.1",
+                        "@types/request": "^2.48.4",
+                        "@types/sinon": "^10.0.0",
+                        "@types/tmp": "0.2.3",
+                        "@types/uuid": "^8.0.0",
+                        "@types/xdg-basedir": "^2.0.0",
+                        "c8": "^7.0.0",
+                        "form-data": "^4.0.0",
+                        "gts": "^3.1.0",
+                        "jsdoc": "^3.6.2",
+                        "jsdoc-fresh": "^1.0.1",
+                        "jsdoc-region-tag": "^1.0.2",
+                        "linkinator": "^2.0.0",
+                        "mocha": "^8.4.0",
+                        "mockery": "^2.1.0",
+                        "nock": "~13.2.0",
+                        "node-fetch": "^2.6.7",
+                        "proxyquire": "^2.1.3",
+                        "sinon": "^14.0.0",
+                        "tmp": "^0.2.0",
+                        "typescript": "~3.9.10",
+                        "yargs": "^16.0.0"
+                    }
+                },
+                "projectId": "sdrive-cd153",
+                "projectIdRequired": false,
+                "authClient": {
+                    "jsonContent": {
+                        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                    },
+                    "cachedCredential": {
+                        "_events": {},
+                        "_eventsCount": 0,
+                        "transporter": {},
+                        "credentials": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "token_type": "Bearer",
+                            "expiry_date": 1730746635000,
+                            "refresh_token": "jwt-placeholder"
+                        },
+                        "eagerRefreshThresholdMillis": 300000,
+                        "forceRefreshOnFailure": false,
+                        "certificateCache": {},
+                        "certificateExpiry": null,
+                        "certificateCacheFormat": "PEM",
+                        "refreshTokenPromises": {},
+                        "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "scopes": [
+                            "https://www.googleapis.com/auth/iam",
+                            "https://www.googleapis.com/auth/cloud-platform",
+                            "https://www.googleapis.com/auth/devstorage.full_control"
+                        ],
+                        "gtoken": {
+                            "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                            "rawToken": {
+                                "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                                "expires_in": 3599,
+                                "token_type": "Bearer"
+                            },
+                            "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                            "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                            "expiresAt": 1730746635000
+                        }
+                    },
+                    "_cachedProjectId": "sdrive-cd153",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ]
+                },
+                "acl": {
+                    "OWNER_ROLE": "OWNER",
+                    "READER_ROLE": "READER",
+                    "WRITER_ROLE": "WRITER"
+                },
+                "retryOptions": {
+                    "autoRetry": true,
+                    "maxRetries": 3,
+                    "retryDelayMultiplier": 2,
+                    "totalTimeout": 600,
+                    "maxRetryDelay": 64,
+                    "idempotencyStrategy": 1
+                }
+            },
+            "id": "sdrive-cd153.firebasestorage.app",
+            "methods": {
+                "create": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "delete": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "exists": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "get": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "getMetadata": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "setMetadata": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                }
+            },
+            "interceptors": [],
+            "name": "sdrive-cd153.firebasestorage.app",
+            "storage": {
+                "baseUrl": "https://storage.googleapis.com/storage/v1",
+                "apiEndpoint": "https://storage.googleapis.com",
+                "globalInterceptors": [],
+                "interceptors": [],
+                "packageJson": {
+                    "name": "@google-cloud/storage",
+                    "description": "Cloud Storage Client Library for Node.js",
+                    "version": "5.20.5",
+                    "license": "Apache-2.0",
+                    "author": "Google Inc.",
+                    "engines": {
+                        "node": ">=10"
+                    },
+                    "repository": "googleapis/nodejs-storage",
+                    "main": "./build/src/index.js",
+                    "types": "./build/src/index.d.ts",
+                    "files": [
+                        "build/src",
+                        "!build/src/**/*.map"
+                    ],
+                    "keywords": [
+                        "google apis client",
+                        "google api client",
+                        "google apis",
+                        "google api",
+                        "google",
+                        "google cloud platform",
+                        "google cloud",
+                        "cloud",
+                        "google storage",
+                        "storage"
+                    ],
+                    "scripts": {
+                        "predocs": "npm run compile",
+                        "docs": "jsdoc -c .jsdoc.js",
+                        "system-test": "mocha build/system-test --timeout 600000 --exit",
+                        "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                        "preconformance-test": "npm run compile",
+                        "presystem-test": "npm run compile",
+                        "test": "c8 mocha build/test",
+                        "pretest": "npm run compile",
+                        "lint": "gts check",
+                        "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                        "all-test": "npm test && npm run system-test && npm run samples-test",
+                        "check": "gts check",
+                        "clean": "gts clean",
+                        "compile": "tsc -p .",
+                        "fix": "gts fix",
+                        "prepare": "npm run compile",
+                        "docs-test": "linkinator docs",
+                        "predocs-test": "npm run docs",
+                        "benchwrapper": "node bin/benchwrapper.js",
+                        "prelint": "cd samples; npm link ../; npm install",
+                        "precompile": "gts clean"
+                    },
+                    "dependencies": {
+                        "@google-cloud/paginator": "^3.0.7",
+                        "@google-cloud/projectify": "^2.0.0",
+                        "@google-cloud/promisify": "^2.0.0",
+                        "abort-controller": "^3.0.0",
+                        "arrify": "^2.0.0",
+                        "async-retry": "^1.3.3",
+                        "compressible": "^2.0.12",
+                        "configstore": "^5.0.0",
+                        "duplexify": "^4.0.0",
+                        "ent": "^2.2.0",
+                        "extend": "^3.0.2",
+                        "gaxios": "^4.0.0",
+                        "google-auth-library": "^7.14.1",
+                        "hash-stream-validation": "^0.2.2",
+                        "mime": "^3.0.0",
+                        "mime-types": "^2.0.8",
+                        "p-limit": "^3.0.1",
+                        "pumpify": "^2.0.0",
+                        "retry-request": "^4.2.2",
+                        "stream-events": "^1.0.4",
+                        "teeny-request": "^7.1.3",
+                        "xdg-basedir": "^4.0.0",
+                        "uuid": "^8.0.0"
+                    },
+                    "devDependencies": {
+                        "@google-cloud/pubsub": "^2.0.0",
+                        "@grpc/grpc-js": "^1.0.3",
+                        "@grpc/proto-loader": "^0.6.0",
+                        "@types/async-retry": "^1.4.3",
+                        "@types/compressible": "^2.0.0",
+                        "@types/configstore": "^5.0.0",
+                        "@types/date-and-time": "^0.13.0",
+                        "@types/ent": "^2.2.1",
+                        "@types/extend": "^3.0.0",
+                        "@types/mime": "^2.0.0",
+                        "@types/mime-types": "^2.1.0",
+                        "@types/mocha": "^8.0.0",
+                        "@types/mockery": "^1.4.29",
+                        "@types/node": "^16.0.0",
+                        "@types/node-fetch": "^2.1.3",
+                        "@types/proxyquire": "^1.3.28",
+                        "@types/pumpify": "^1.4.1",
+                        "@types/request": "^2.48.4",
+                        "@types/sinon": "^10.0.0",
+                        "@types/tmp": "0.2.3",
+                        "@types/uuid": "^8.0.0",
+                        "@types/xdg-basedir": "^2.0.0",
+                        "c8": "^7.0.0",
+                        "form-data": "^4.0.0",
+                        "gts": "^3.1.0",
+                        "jsdoc": "^3.6.2",
+                        "jsdoc-fresh": "^1.0.1",
+                        "jsdoc-region-tag": "^1.0.2",
+                        "linkinator": "^2.0.0",
+                        "mocha": "^8.4.0",
+                        "mockery": "^2.1.0",
+                        "nock": "~13.2.0",
+                        "node-fetch": "^2.6.7",
+                        "proxyquire": "^2.1.3",
+                        "sinon": "^14.0.0",
+                        "tmp": "^0.2.0",
+                        "typescript": "~3.9.10",
+                        "yargs": "^16.0.0"
+                    }
+                },
+                "projectId": "sdrive-cd153",
+                "projectIdRequired": false,
+                "authClient": {
+                    "jsonContent": {
+                        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                    },
+                    "cachedCredential": {
+                        "_events": {},
+                        "_eventsCount": 0,
+                        "transporter": {},
+                        "credentials": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "token_type": "Bearer",
+                            "expiry_date": 1730746635000,
+                            "refresh_token": "jwt-placeholder"
+                        },
+                        "eagerRefreshThresholdMillis": 300000,
+                        "forceRefreshOnFailure": false,
+                        "certificateCache": {},
+                        "certificateExpiry": null,
+                        "certificateCacheFormat": "PEM",
+                        "refreshTokenPromises": {},
+                        "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "scopes": [
+                            "https://www.googleapis.com/auth/iam",
+                            "https://www.googleapis.com/auth/cloud-platform",
+                            "https://www.googleapis.com/auth/devstorage.full_control"
+                        ],
+                        "gtoken": {
+                            "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                            "rawToken": {
+                                "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                                "expires_in": 3599,
+                                "token_type": "Bearer"
+                            },
+                            "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                            "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                            "expiresAt": 1730746635000
+                        }
+                    },
+                    "_cachedProjectId": "sdrive-cd153",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ]
+                },
+                "acl": {
+                    "OWNER_ROLE": "OWNER",
+                    "READER_ROLE": "READER",
+                    "WRITER_ROLE": "WRITER"
+                },
+                "retryOptions": {
+                    "autoRetry": true,
+                    "maxRetries": 3,
+                    "retryDelayMultiplier": 2,
+                    "totalTimeout": 600,
+                    "maxRetryDelay": 64,
+                    "idempotencyStrategy": 1
+                }
+            },
+            "acl": {
+                "owners": {},
+                "readers": {},
+                "writers": {},
+                "pathPrefix": "/acl",
+                "default": {
+                    "owners": {},
+                    "readers": {},
+                    "writers": {},
+                    "pathPrefix": "/defaultObjectAcl"
+                }
+            },
+            "iam": {
+                "resourceId_": "buckets/[object Promise]"
+            },
+            "instanceRetryValue": true
+        },
+        "id": "pic192f852e98d.jpeg",
+        "methods": {
+            "delete": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "exists": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "get": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "getMetadata": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "setMetadata": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            }
+        },
+        "interceptors": [],
+        "bucket": {
+            "_events": {},
+            "_eventsCount": 0,
+            "metadata": {},
+            "baseUrl": "/b",
+            "parent": {
+                "baseUrl": "https://storage.googleapis.com/storage/v1",
+                "apiEndpoint": "https://storage.googleapis.com",
+                "globalInterceptors": [],
+                "interceptors": [],
+                "packageJson": {
+                    "name": "@google-cloud/storage",
+                    "description": "Cloud Storage Client Library for Node.js",
+                    "version": "5.20.5",
+                    "license": "Apache-2.0",
+                    "author": "Google Inc.",
+                    "engines": {
+                        "node": ">=10"
+                    },
+                    "repository": "googleapis/nodejs-storage",
+                    "main": "./build/src/index.js",
+                    "types": "./build/src/index.d.ts",
+                    "files": [
+                        "build/src",
+                        "!build/src/**/*.map"
+                    ],
+                    "keywords": [
+                        "google apis client",
+                        "google api client",
+                        "google apis",
+                        "google api",
+                        "google",
+                        "google cloud platform",
+                        "google cloud",
+                        "cloud",
+                        "google storage",
+                        "storage"
+                    ],
+                    "scripts": {
+                        "predocs": "npm run compile",
+                        "docs": "jsdoc -c .jsdoc.js",
+                        "system-test": "mocha build/system-test --timeout 600000 --exit",
+                        "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                        "preconformance-test": "npm run compile",
+                        "presystem-test": "npm run compile",
+                        "test": "c8 mocha build/test",
+                        "pretest": "npm run compile",
+                        "lint": "gts check",
+                        "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                        "all-test": "npm test && npm run system-test && npm run samples-test",
+                        "check": "gts check",
+                        "clean": "gts clean",
+                        "compile": "tsc -p .",
+                        "fix": "gts fix",
+                        "prepare": "npm run compile",
+                        "docs-test": "linkinator docs",
+                        "predocs-test": "npm run docs",
+                        "benchwrapper": "node bin/benchwrapper.js",
+                        "prelint": "cd samples; npm link ../; npm install",
+                        "precompile": "gts clean"
+                    },
+                    "dependencies": {
+                        "@google-cloud/paginator": "^3.0.7",
+                        "@google-cloud/projectify": "^2.0.0",
+                        "@google-cloud/promisify": "^2.0.0",
+                        "abort-controller": "^3.0.0",
+                        "arrify": "^2.0.0",
+                        "async-retry": "^1.3.3",
+                        "compressible": "^2.0.12",
+                        "configstore": "^5.0.0",
+                        "duplexify": "^4.0.0",
+                        "ent": "^2.2.0",
+                        "extend": "^3.0.2",
+                        "gaxios": "^4.0.0",
+                        "google-auth-library": "^7.14.1",
+                        "hash-stream-validation": "^0.2.2",
+                        "mime": "^3.0.0",
+                        "mime-types": "^2.0.8",
+                        "p-limit": "^3.0.1",
+                        "pumpify": "^2.0.0",
+                        "retry-request": "^4.2.2",
+                        "stream-events": "^1.0.4",
+                        "teeny-request": "^7.1.3",
+                        "xdg-basedir": "^4.0.0",
+                        "uuid": "^8.0.0"
+                    },
+                    "devDependencies": {
+                        "@google-cloud/pubsub": "^2.0.0",
+                        "@grpc/grpc-js": "^1.0.3",
+                        "@grpc/proto-loader": "^0.6.0",
+                        "@types/async-retry": "^1.4.3",
+                        "@types/compressible": "^2.0.0",
+                        "@types/configstore": "^5.0.0",
+                        "@types/date-and-time": "^0.13.0",
+                        "@types/ent": "^2.2.1",
+                        "@types/extend": "^3.0.0",
+                        "@types/mime": "^2.0.0",
+                        "@types/mime-types": "^2.1.0",
+                        "@types/mocha": "^8.0.0",
+                        "@types/mockery": "^1.4.29",
+                        "@types/node": "^16.0.0",
+                        "@types/node-fetch": "^2.1.3",
+                        "@types/proxyquire": "^1.3.28",
+                        "@types/pumpify": "^1.4.1",
+                        "@types/request": "^2.48.4",
+                        "@types/sinon": "^10.0.0",
+                        "@types/tmp": "0.2.3",
+                        "@types/uuid": "^8.0.0",
+                        "@types/xdg-basedir": "^2.0.0",
+                        "c8": "^7.0.0",
+                        "form-data": "^4.0.0",
+                        "gts": "^3.1.0",
+                        "jsdoc": "^3.6.2",
+                        "jsdoc-fresh": "^1.0.1",
+                        "jsdoc-region-tag": "^1.0.2",
+                        "linkinator": "^2.0.0",
+                        "mocha": "^8.4.0",
+                        "mockery": "^2.1.0",
+                        "nock": "~13.2.0",
+                        "node-fetch": "^2.6.7",
+                        "proxyquire": "^2.1.3",
+                        "sinon": "^14.0.0",
+                        "tmp": "^0.2.0",
+                        "typescript": "~3.9.10",
+                        "yargs": "^16.0.0"
+                    }
+                },
+                "projectId": "sdrive-cd153",
+                "projectIdRequired": false,
+                "authClient": {
+                    "jsonContent": {
+                        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                    },
+                    "cachedCredential": {
+                        "_events": {},
+                        "_eventsCount": 0,
+                        "transporter": {},
+                        "credentials": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "token_type": "Bearer",
+                            "expiry_date": 1730746635000,
+                            "refresh_token": "jwt-placeholder"
+                        },
+                        "eagerRefreshThresholdMillis": 300000,
+                        "forceRefreshOnFailure": false,
+                        "certificateCache": {},
+                        "certificateExpiry": null,
+                        "certificateCacheFormat": "PEM",
+                        "refreshTokenPromises": {},
+                        "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "scopes": [
+                            "https://www.googleapis.com/auth/iam",
+                            "https://www.googleapis.com/auth/cloud-platform",
+                            "https://www.googleapis.com/auth/devstorage.full_control"
+                        ],
+                        "gtoken": {
+                            "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                            "rawToken": {
+                                "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                                "expires_in": 3599,
+                                "token_type": "Bearer"
+                            },
+                            "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                            "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                            "expiresAt": 1730746635000
+                        }
+                    },
+                    "_cachedProjectId": "sdrive-cd153",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ]
+                },
+                "acl": {
+                    "OWNER_ROLE": "OWNER",
+                    "READER_ROLE": "READER",
+                    "WRITER_ROLE": "WRITER"
+                },
+                "retryOptions": {
+                    "autoRetry": true,
+                    "maxRetries": 3,
+                    "retryDelayMultiplier": 2,
+                    "totalTimeout": 600,
+                    "maxRetryDelay": 64,
+                    "idempotencyStrategy": 1
+                }
+            },
+            "id": "sdrive-cd153.firebasestorage.app",
+            "methods": {
+                "create": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "delete": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "exists": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "get": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "getMetadata": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                },
+                "setMetadata": {
+                    "reqOpts": {
+                        "qs": {}
+                    }
+                }
+            },
+            "interceptors": [],
+            "name": "sdrive-cd153.firebasestorage.app",
+            "storage": {
+                "baseUrl": "https://storage.googleapis.com/storage/v1",
+                "apiEndpoint": "https://storage.googleapis.com",
+                "globalInterceptors": [],
+                "interceptors": [],
+                "packageJson": {
+                    "name": "@google-cloud/storage",
+                    "description": "Cloud Storage Client Library for Node.js",
+                    "version": "5.20.5",
+                    "license": "Apache-2.0",
+                    "author": "Google Inc.",
+                    "engines": {
+                        "node": ">=10"
+                    },
+                    "repository": "googleapis/nodejs-storage",
+                    "main": "./build/src/index.js",
+                    "types": "./build/src/index.d.ts",
+                    "files": [
+                        "build/src",
+                        "!build/src/**/*.map"
+                    ],
+                    "keywords": [
+                        "google apis client",
+                        "google api client",
+                        "google apis",
+                        "google api",
+                        "google",
+                        "google cloud platform",
+                        "google cloud",
+                        "cloud",
+                        "google storage",
+                        "storage"
+                    ],
+                    "scripts": {
+                        "predocs": "npm run compile",
+                        "docs": "jsdoc -c .jsdoc.js",
+                        "system-test": "mocha build/system-test --timeout 600000 --exit",
+                        "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                        "preconformance-test": "npm run compile",
+                        "presystem-test": "npm run compile",
+                        "test": "c8 mocha build/test",
+                        "pretest": "npm run compile",
+                        "lint": "gts check",
+                        "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                        "all-test": "npm test && npm run system-test && npm run samples-test",
+                        "check": "gts check",
+                        "clean": "gts clean",
+                        "compile": "tsc -p .",
+                        "fix": "gts fix",
+                        "prepare": "npm run compile",
+                        "docs-test": "linkinator docs",
+                        "predocs-test": "npm run docs",
+                        "benchwrapper": "node bin/benchwrapper.js",
+                        "prelint": "cd samples; npm link ../; npm install",
+                        "precompile": "gts clean"
+                    },
+                    "dependencies": {
+                        "@google-cloud/paginator": "^3.0.7",
+                        "@google-cloud/projectify": "^2.0.0",
+                        "@google-cloud/promisify": "^2.0.0",
+                        "abort-controller": "^3.0.0",
+                        "arrify": "^2.0.0",
+                        "async-retry": "^1.3.3",
+                        "compressible": "^2.0.12",
+                        "configstore": "^5.0.0",
+                        "duplexify": "^4.0.0",
+                        "ent": "^2.2.0",
+                        "extend": "^3.0.2",
+                        "gaxios": "^4.0.0",
+                        "google-auth-library": "^7.14.1",
+                        "hash-stream-validation": "^0.2.2",
+                        "mime": "^3.0.0",
+                        "mime-types": "^2.0.8",
+                        "p-limit": "^3.0.1",
+                        "pumpify": "^2.0.0",
+                        "retry-request": "^4.2.2",
+                        "stream-events": "^1.0.4",
+                        "teeny-request": "^7.1.3",
+                        "xdg-basedir": "^4.0.0",
+                        "uuid": "^8.0.0"
+                    },
+                    "devDependencies": {
+                        "@google-cloud/pubsub": "^2.0.0",
+                        "@grpc/grpc-js": "^1.0.3",
+                        "@grpc/proto-loader": "^0.6.0",
+                        "@types/async-retry": "^1.4.3",
+                        "@types/compressible": "^2.0.0",
+                        "@types/configstore": "^5.0.0",
+                        "@types/date-and-time": "^0.13.0",
+                        "@types/ent": "^2.2.1",
+                        "@types/extend": "^3.0.0",
+                        "@types/mime": "^2.0.0",
+                        "@types/mime-types": "^2.1.0",
+                        "@types/mocha": "^8.0.0",
+                        "@types/mockery": "^1.4.29",
+                        "@types/node": "^16.0.0",
+                        "@types/node-fetch": "^2.1.3",
+                        "@types/proxyquire": "^1.3.28",
+                        "@types/pumpify": "^1.4.1",
+                        "@types/request": "^2.48.4",
+                        "@types/sinon": "^10.0.0",
+                        "@types/tmp": "0.2.3",
+                        "@types/uuid": "^8.0.0",
+                        "@types/xdg-basedir": "^2.0.0",
+                        "c8": "^7.0.0",
+                        "form-data": "^4.0.0",
+                        "gts": "^3.1.0",
+                        "jsdoc": "^3.6.2",
+                        "jsdoc-fresh": "^1.0.1",
+                        "jsdoc-region-tag": "^1.0.2",
+                        "linkinator": "^2.0.0",
+                        "mocha": "^8.4.0",
+                        "mockery": "^2.1.0",
+                        "nock": "~13.2.0",
+                        "node-fetch": "^2.6.7",
+                        "proxyquire": "^2.1.3",
+                        "sinon": "^14.0.0",
+                        "tmp": "^0.2.0",
+                        "typescript": "~3.9.10",
+                        "yargs": "^16.0.0"
+                    }
+                },
+                "projectId": "sdrive-cd153",
+                "projectIdRequired": false,
+                "authClient": {
+                    "jsonContent": {
+                        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                    },
+                    "cachedCredential": {
+                        "_events": {},
+                        "_eventsCount": 0,
+                        "transporter": {},
+                        "credentials": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "token_type": "Bearer",
+                            "expiry_date": 1730746635000,
+                            "refresh_token": "jwt-placeholder"
+                        },
+                        "eagerRefreshThresholdMillis": 300000,
+                        "forceRefreshOnFailure": false,
+                        "certificateCache": {},
+                        "certificateExpiry": null,
+                        "certificateCacheFormat": "PEM",
+                        "refreshTokenPromises": {},
+                        "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "scopes": [
+                            "https://www.googleapis.com/auth/iam",
+                            "https://www.googleapis.com/auth/cloud-platform",
+                            "https://www.googleapis.com/auth/devstorage.full_control"
+                        ],
+                        "gtoken": {
+                            "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                            "rawToken": {
+                                "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                                "expires_in": 3599,
+                                "token_type": "Bearer"
+                            },
+                            "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                            "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                            "expiresAt": 1730746635000
+                        }
+                    },
+                    "_cachedProjectId": "sdrive-cd153",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ]
+                },
+                "acl": {
+                    "OWNER_ROLE": "OWNER",
+                    "READER_ROLE": "READER",
+                    "WRITER_ROLE": "WRITER"
+                },
+                "retryOptions": {
+                    "autoRetry": true,
+                    "maxRetries": 3,
+                    "retryDelayMultiplier": 2,
+                    "totalTimeout": 600,
+                    "maxRetryDelay": 64,
+                    "idempotencyStrategy": 1
+                }
+            },
+            "acl": {
+                "owners": {},
+                "readers": {},
+                "writers": {},
+                "pathPrefix": "/acl",
+                "default": {
+                    "owners": {},
+                    "readers": {},
+                    "writers": {},
+                    "pathPrefix": "/defaultObjectAcl"
+                }
+            },
+            "iam": {
+                "resourceId_": "buckets/[object Promise]"
+            },
+            "instanceRetryValue": true
+        },
+        "storage": {
+            "baseUrl": "https://storage.googleapis.com/storage/v1",
+            "apiEndpoint": "https://storage.googleapis.com",
+            "globalInterceptors": [],
+            "interceptors": [],
+            "packageJson": {
+                "name": "@google-cloud/storage",
+                "description": "Cloud Storage Client Library for Node.js",
+                "version": "5.20.5",
+                "license": "Apache-2.0",
+                "author": "Google Inc.",
+                "engines": {
+                    "node": ">=10"
+                },
+                "repository": "googleapis/nodejs-storage",
+                "main": "./build/src/index.js",
+                "types": "./build/src/index.d.ts",
+                "files": [
+                    "build/src",
+                    "!build/src/**/*.map"
+                ],
+                "keywords": [
+                    "google apis client",
+                    "google api client",
+                    "google apis",
+                    "google api",
+                    "google",
+                    "google cloud platform",
+                    "google cloud",
+                    "cloud",
+                    "google storage",
+                    "storage"
+                ],
+                "scripts": {
+                    "predocs": "npm run compile",
+                    "docs": "jsdoc -c .jsdoc.js",
+                    "system-test": "mocha build/system-test --timeout 600000 --exit",
+                    "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                    "preconformance-test": "npm run compile",
+                    "presystem-test": "npm run compile",
+                    "test": "c8 mocha build/test",
+                    "pretest": "npm run compile",
+                    "lint": "gts check",
+                    "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                    "all-test": "npm test && npm run system-test && npm run samples-test",
+                    "check": "gts check",
+                    "clean": "gts clean",
+                    "compile": "tsc -p .",
+                    "fix": "gts fix",
+                    "prepare": "npm run compile",
+                    "docs-test": "linkinator docs",
+                    "predocs-test": "npm run docs",
+                    "benchwrapper": "node bin/benchwrapper.js",
+                    "prelint": "cd samples; npm link ../; npm install",
+                    "precompile": "gts clean"
+                },
+                "dependencies": {
+                    "@google-cloud/paginator": "^3.0.7",
+                    "@google-cloud/projectify": "^2.0.0",
+                    "@google-cloud/promisify": "^2.0.0",
+                    "abort-controller": "^3.0.0",
+                    "arrify": "^2.0.0",
+                    "async-retry": "^1.3.3",
+                    "compressible": "^2.0.12",
+                    "configstore": "^5.0.0",
+                    "duplexify": "^4.0.0",
+                    "ent": "^2.2.0",
+                    "extend": "^3.0.2",
+                    "gaxios": "^4.0.0",
+                    "google-auth-library": "^7.14.1",
+                    "hash-stream-validation": "^0.2.2",
+                    "mime": "^3.0.0",
+                    "mime-types": "^2.0.8",
+                    "p-limit": "^3.0.1",
+                    "pumpify": "^2.0.0",
+                    "retry-request": "^4.2.2",
+                    "stream-events": "^1.0.4",
+                    "teeny-request": "^7.1.3",
+                    "xdg-basedir": "^4.0.0",
+                    "uuid": "^8.0.0"
+                },
+                "devDependencies": {
+                    "@google-cloud/pubsub": "^2.0.0",
+                    "@grpc/grpc-js": "^1.0.3",
+                    "@grpc/proto-loader": "^0.6.0",
+                    "@types/async-retry": "^1.4.3",
+                    "@types/compressible": "^2.0.0",
+                    "@types/configstore": "^5.0.0",
+                    "@types/date-and-time": "^0.13.0",
+                    "@types/ent": "^2.2.1",
+                    "@types/extend": "^3.0.0",
+                    "@types/mime": "^2.0.0",
+                    "@types/mime-types": "^2.1.0",
+                    "@types/mocha": "^8.0.0",
+                    "@types/mockery": "^1.4.29",
+                    "@types/node": "^16.0.0",
+                    "@types/node-fetch": "^2.1.3",
+                    "@types/proxyquire": "^1.3.28",
+                    "@types/pumpify": "^1.4.1",
+                    "@types/request": "^2.48.4",
+                    "@types/sinon": "^10.0.0",
+                    "@types/tmp": "0.2.3",
+                    "@types/uuid": "^8.0.0",
+                    "@types/xdg-basedir": "^2.0.0",
+                    "c8": "^7.0.0",
+                    "form-data": "^4.0.0",
+                    "gts": "^3.1.0",
+                    "jsdoc": "^3.6.2",
+                    "jsdoc-fresh": "^1.0.1",
+                    "jsdoc-region-tag": "^1.0.2",
+                    "linkinator": "^2.0.0",
+                    "mocha": "^8.4.0",
+                    "mockery": "^2.1.0",
+                    "nock": "~13.2.0",
+                    "node-fetch": "^2.6.7",
+                    "proxyquire": "^2.1.3",
+                    "sinon": "^14.0.0",
+                    "tmp": "^0.2.0",
+                    "typescript": "~3.9.10",
+                    "yargs": "^16.0.0"
+                }
+            },
+            "projectId": "sdrive-cd153",
+            "projectIdRequired": false,
+            "authClient": {
+                "jsonContent": {
+                    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                    "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                },
+                "cachedCredential": {
+                    "_events": {},
+                    "_eventsCount": 0,
+                    "transporter": {},
+                    "credentials": {
+                        "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                        "token_type": "Bearer",
+                        "expiry_date": 1730746635000,
+                        "refresh_token": "jwt-placeholder"
+                    },
+                    "eagerRefreshThresholdMillis": 300000,
+                    "forceRefreshOnFailure": false,
+                    "certificateCache": {},
+                    "certificateExpiry": null,
+                    "certificateCacheFormat": "PEM",
+                    "refreshTokenPromises": {},
+                    "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                    "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ],
+                    "gtoken": {
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "rawToken": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "expires_in": 3599,
+                            "token_type": "Bearer"
+                        },
+                        "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                        "expiresAt": 1730746635000
+                    }
+                },
+                "_cachedProjectId": "sdrive-cd153",
+                "scopes": [
+                    "https://www.googleapis.com/auth/iam",
+                    "https://www.googleapis.com/auth/cloud-platform",
+                    "https://www.googleapis.com/auth/devstorage.full_control"
+                ]
+            },
+            "acl": {
+                "OWNER_ROLE": "OWNER",
+                "READER_ROLE": "READER",
+                "WRITER_ROLE": "WRITER"
+            },
+            "retryOptions": {
+                "autoRetry": true,
+                "maxRetries": 3,
+                "retryDelayMultiplier": 2,
+                "totalTimeout": 600,
+                "maxRetryDelay": 64,
+                "idempotencyStrategy": 1
+            }
+        },
+        "name": "pic192f852e98d.jpeg",
+        "acl": {
+            "owners": {},
+            "readers": {},
+            "writers": {},
+            "pathPrefix": "/acl"
+        },
+        "instanceRetryValue": true
+    },
+    "path": "pic192f852e98d.jpeg",
+    "bucket": "sdrive-cd153.firebasestorage.app",
+    "bucketRef": {
+        "_events": {},
+        "_eventsCount": 0,
+        "metadata": {},
+        "baseUrl": "/b",
+        "parent": {
+            "baseUrl": "https://storage.googleapis.com/storage/v1",
+            "apiEndpoint": "https://storage.googleapis.com",
+            "globalInterceptors": [],
+            "interceptors": [],
+            "packageJson": {
+                "name": "@google-cloud/storage",
+                "description": "Cloud Storage Client Library for Node.js",
+                "version": "5.20.5",
+                "license": "Apache-2.0",
+                "author": "Google Inc.",
+                "engines": {
+                    "node": ">=10"
+                },
+                "repository": "googleapis/nodejs-storage",
+                "main": "./build/src/index.js",
+                "types": "./build/src/index.d.ts",
+                "files": [
+                    "build/src",
+                    "!build/src/**/*.map"
+                ],
+                "keywords": [
+                    "google apis client",
+                    "google api client",
+                    "google apis",
+                    "google api",
+                    "google",
+                    "google cloud platform",
+                    "google cloud",
+                    "cloud",
+                    "google storage",
+                    "storage"
+                ],
+                "scripts": {
+                    "predocs": "npm run compile",
+                    "docs": "jsdoc -c .jsdoc.js",
+                    "system-test": "mocha build/system-test --timeout 600000 --exit",
+                    "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                    "preconformance-test": "npm run compile",
+                    "presystem-test": "npm run compile",
+                    "test": "c8 mocha build/test",
+                    "pretest": "npm run compile",
+                    "lint": "gts check",
+                    "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                    "all-test": "npm test && npm run system-test && npm run samples-test",
+                    "check": "gts check",
+                    "clean": "gts clean",
+                    "compile": "tsc -p .",
+                    "fix": "gts fix",
+                    "prepare": "npm run compile",
+                    "docs-test": "linkinator docs",
+                    "predocs-test": "npm run docs",
+                    "benchwrapper": "node bin/benchwrapper.js",
+                    "prelint": "cd samples; npm link ../; npm install",
+                    "precompile": "gts clean"
+                },
+                "dependencies": {
+                    "@google-cloud/paginator": "^3.0.7",
+                    "@google-cloud/projectify": "^2.0.0",
+                    "@google-cloud/promisify": "^2.0.0",
+                    "abort-controller": "^3.0.0",
+                    "arrify": "^2.0.0",
+                    "async-retry": "^1.3.3",
+                    "compressible": "^2.0.12",
+                    "configstore": "^5.0.0",
+                    "duplexify": "^4.0.0",
+                    "ent": "^2.2.0",
+                    "extend": "^3.0.2",
+                    "gaxios": "^4.0.0",
+                    "google-auth-library": "^7.14.1",
+                    "hash-stream-validation": "^0.2.2",
+                    "mime": "^3.0.0",
+                    "mime-types": "^2.0.8",
+                    "p-limit": "^3.0.1",
+                    "pumpify": "^2.0.0",
+                    "retry-request": "^4.2.2",
+                    "stream-events": "^1.0.4",
+                    "teeny-request": "^7.1.3",
+                    "xdg-basedir": "^4.0.0",
+                    "uuid": "^8.0.0"
+                },
+                "devDependencies": {
+                    "@google-cloud/pubsub": "^2.0.0",
+                    "@grpc/grpc-js": "^1.0.3",
+                    "@grpc/proto-loader": "^0.6.0",
+                    "@types/async-retry": "^1.4.3",
+                    "@types/compressible": "^2.0.0",
+                    "@types/configstore": "^5.0.0",
+                    "@types/date-and-time": "^0.13.0",
+                    "@types/ent": "^2.2.1",
+                    "@types/extend": "^3.0.0",
+                    "@types/mime": "^2.0.0",
+                    "@types/mime-types": "^2.1.0",
+                    "@types/mocha": "^8.0.0",
+                    "@types/mockery": "^1.4.29",
+                    "@types/node": "^16.0.0",
+                    "@types/node-fetch": "^2.1.3",
+                    "@types/proxyquire": "^1.3.28",
+                    "@types/pumpify": "^1.4.1",
+                    "@types/request": "^2.48.4",
+                    "@types/sinon": "^10.0.0",
+                    "@types/tmp": "0.2.3",
+                    "@types/uuid": "^8.0.0",
+                    "@types/xdg-basedir": "^2.0.0",
+                    "c8": "^7.0.0",
+                    "form-data": "^4.0.0",
+                    "gts": "^3.1.0",
+                    "jsdoc": "^3.6.2",
+                    "jsdoc-fresh": "^1.0.1",
+                    "jsdoc-region-tag": "^1.0.2",
+                    "linkinator": "^2.0.0",
+                    "mocha": "^8.4.0",
+                    "mockery": "^2.1.0",
+                    "nock": "~13.2.0",
+                    "node-fetch": "^2.6.7",
+                    "proxyquire": "^2.1.3",
+                    "sinon": "^14.0.0",
+                    "tmp": "^0.2.0",
+                    "typescript": "~3.9.10",
+                    "yargs": "^16.0.0"
+                }
+            },
+            "projectId": "sdrive-cd153",
+            "projectIdRequired": false,
+            "authClient": {
+                "jsonContent": {
+                    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                    "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                },
+                "cachedCredential": {
+                    "_events": {},
+                    "_eventsCount": 0,
+                    "transporter": {},
+                    "credentials": {
+                        "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                        "token_type": "Bearer",
+                        "expiry_date": 1730746635000,
+                        "refresh_token": "jwt-placeholder"
+                    },
+                    "eagerRefreshThresholdMillis": 300000,
+                    "forceRefreshOnFailure": false,
+                    "certificateCache": {},
+                    "certificateExpiry": null,
+                    "certificateCacheFormat": "PEM",
+                    "refreshTokenPromises": {},
+                    "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                    "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ],
+                    "gtoken": {
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "rawToken": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "expires_in": 3599,
+                            "token_type": "Bearer"
+                        },
+                        "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                        "expiresAt": 1730746635000
+                    }
+                },
+                "_cachedProjectId": "sdrive-cd153",
+                "scopes": [
+                    "https://www.googleapis.com/auth/iam",
+                    "https://www.googleapis.com/auth/cloud-platform",
+                    "https://www.googleapis.com/auth/devstorage.full_control"
+                ]
+            },
+            "acl": {
+                "OWNER_ROLE": "OWNER",
+                "READER_ROLE": "READER",
+                "WRITER_ROLE": "WRITER"
+            },
+            "retryOptions": {
+                "autoRetry": true,
+                "maxRetries": 3,
+                "retryDelayMultiplier": 2,
+                "totalTimeout": 600,
+                "maxRetryDelay": 64,
+                "idempotencyStrategy": 1
+            }
+        },
+        "id": "sdrive-cd153.firebasestorage.app",
+        "methods": {
+            "create": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "delete": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "exists": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "get": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "getMetadata": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            },
+            "setMetadata": {
+                "reqOpts": {
+                    "qs": {}
+                }
+            }
+        },
+        "interceptors": [],
+        "name": "sdrive-cd153.firebasestorage.app",
+        "storage": {
+            "baseUrl": "https://storage.googleapis.com/storage/v1",
+            "apiEndpoint": "https://storage.googleapis.com",
+            "globalInterceptors": [],
+            "interceptors": [],
+            "packageJson": {
+                "name": "@google-cloud/storage",
+                "description": "Cloud Storage Client Library for Node.js",
+                "version": "5.20.5",
+                "license": "Apache-2.0",
+                "author": "Google Inc.",
+                "engines": {
+                    "node": ">=10"
+                },
+                "repository": "googleapis/nodejs-storage",
+                "main": "./build/src/index.js",
+                "types": "./build/src/index.d.ts",
+                "files": [
+                    "build/src",
+                    "!build/src/**/*.map"
+                ],
+                "keywords": [
+                    "google apis client",
+                    "google api client",
+                    "google apis",
+                    "google api",
+                    "google",
+                    "google cloud platform",
+                    "google cloud",
+                    "cloud",
+                    "google storage",
+                    "storage"
+                ],
+                "scripts": {
+                    "predocs": "npm run compile",
+                    "docs": "jsdoc -c .jsdoc.js",
+                    "system-test": "mocha build/system-test --timeout 600000 --exit",
+                    "conformance-test": "mocha --parallel build/conformance-test/ --require build/conformance-test/globalHooks.js",
+                    "preconformance-test": "npm run compile",
+                    "presystem-test": "npm run compile",
+                    "test": "c8 mocha build/test",
+                    "pretest": "npm run compile",
+                    "lint": "gts check",
+                    "samples-test": "npm link && cd samples/ && npm link ../ && npm test && cd ../",
+                    "all-test": "npm test && npm run system-test && npm run samples-test",
+                    "check": "gts check",
+                    "clean": "gts clean",
+                    "compile": "tsc -p .",
+                    "fix": "gts fix",
+                    "prepare": "npm run compile",
+                    "docs-test": "linkinator docs",
+                    "predocs-test": "npm run docs",
+                    "benchwrapper": "node bin/benchwrapper.js",
+                    "prelint": "cd samples; npm link ../; npm install",
+                    "precompile": "gts clean"
+                },
+                "dependencies": {
+                    "@google-cloud/paginator": "^3.0.7",
+                    "@google-cloud/projectify": "^2.0.0",
+                    "@google-cloud/promisify": "^2.0.0",
+                    "abort-controller": "^3.0.0",
+                    "arrify": "^2.0.0",
+                    "async-retry": "^1.3.3",
+                    "compressible": "^2.0.12",
+                    "configstore": "^5.0.0",
+                    "duplexify": "^4.0.0",
+                    "ent": "^2.2.0",
+                    "extend": "^3.0.2",
+                    "gaxios": "^4.0.0",
+                    "google-auth-library": "^7.14.1",
+                    "hash-stream-validation": "^0.2.2",
+                    "mime": "^3.0.0",
+                    "mime-types": "^2.0.8",
+                    "p-limit": "^3.0.1",
+                    "pumpify": "^2.0.0",
+                    "retry-request": "^4.2.2",
+                    "stream-events": "^1.0.4",
+                    "teeny-request": "^7.1.3",
+                    "xdg-basedir": "^4.0.0",
+                    "uuid": "^8.0.0"
+                },
+                "devDependencies": {
+                    "@google-cloud/pubsub": "^2.0.0",
+                    "@grpc/grpc-js": "^1.0.3",
+                    "@grpc/proto-loader": "^0.6.0",
+                    "@types/async-retry": "^1.4.3",
+                    "@types/compressible": "^2.0.0",
+                    "@types/configstore": "^5.0.0",
+                    "@types/date-and-time": "^0.13.0",
+                    "@types/ent": "^2.2.1",
+                    "@types/extend": "^3.0.0",
+                    "@types/mime": "^2.0.0",
+                    "@types/mime-types": "^2.1.0",
+                    "@types/mocha": "^8.0.0",
+                    "@types/mockery": "^1.4.29",
+                    "@types/node": "^16.0.0",
+                    "@types/node-fetch": "^2.1.3",
+                    "@types/proxyquire": "^1.3.28",
+                    "@types/pumpify": "^1.4.1",
+                    "@types/request": "^2.48.4",
+                    "@types/sinon": "^10.0.0",
+                    "@types/tmp": "0.2.3",
+                    "@types/uuid": "^8.0.0",
+                    "@types/xdg-basedir": "^2.0.0",
+                    "c8": "^7.0.0",
+                    "form-data": "^4.0.0",
+                    "gts": "^3.1.0",
+                    "jsdoc": "^3.6.2",
+                    "jsdoc-fresh": "^1.0.1",
+                    "jsdoc-region-tag": "^1.0.2",
+                    "linkinator": "^2.0.0",
+                    "mocha": "^8.4.0",
+                    "mockery": "^2.1.0",
+                    "nock": "~13.2.0",
+                    "node-fetch": "^2.6.7",
+                    "proxyquire": "^2.1.3",
+                    "sinon": "^14.0.0",
+                    "tmp": "^0.2.0",
+                    "typescript": "~3.9.10",
+                    "yargs": "^16.0.0"
+                }
+            },
+            "projectId": "sdrive-cd153",
+            "projectIdRequired": false,
+            "authClient": {
+                "jsonContent": {
+                    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                    "client_email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com"
+                },
+                "cachedCredential": {
+                    "_events": {},
+                    "_eventsCount": 0,
+                    "transporter": {},
+                    "credentials": {
+                        "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                        "token_type": "Bearer",
+                        "expiry_date": 1730746635000,
+                        "refresh_token": "jwt-placeholder"
+                    },
+                    "eagerRefreshThresholdMillis": 300000,
+                    "forceRefreshOnFailure": false,
+                    "certificateCache": {},
+                    "certificateExpiry": null,
+                    "certificateCacheFormat": "PEM",
+                    "refreshTokenPromises": {},
+                    "email": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                    "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                    "scopes": [
+                        "https://www.googleapis.com/auth/iam",
+                        "https://www.googleapis.com/auth/cloud-platform",
+                        "https://www.googleapis.com/auth/devstorage.full_control"
+                    ],
+                    "gtoken": {
+                        "key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDDl7NIYBZ2FUFw\nhxX9EccwgyWj695rTm/QZ4dHTDNwyApx4WW83E8/Qf9Ot4fBQmfaCO1pLy6LOChG\nVS5rdz7X/xZjosWCORkk9WFtBAs4ilC+6VT9BBKWQnIVJoP6fXiPuPNYakHkRGRN\nU8XSOstKLOZ6PMhiyHVs3+hEBwtQMYa57MZmpNlxUCVTv2t9z0E+EIRQSoaJwn0x\nsnArhFc87qSIXWjN6XVoXwmCfjz90tPLAhWjtEdoibhI7ZzHI7hsn3lOEDO8MhWd\nZ7qSxkRtN48SetqqIhGHHgCciF7dLS6wyiVfAj67uYqaNlXwEP6YjlvELEFKJ4i5\nFzb663JbAgMBAAECggEAGkc2YiHuwpymdxzfGmoaDe2A0B4vetFF+oT+Stj1DFED\n/jrfNVmQGBqg142W4qMuWr/aTch2A2RfHNvy6aNSwShXdLl4ub88HpgNJ91kOIt0\nv8GPlpLGgIOa2jabgrr6yKx7nURhZ+68XxtDN7SIfYW8zW1/Kq5uAFuw0/ryTSqu\nAnUdgJXJaQXIShqs+YCjRD4TYDzsWUNiVwbAXuzEVXNzTnEpNjmrJ8wu6qu3KNy/\nfQj3wmBZQ+ZtyY6I0/NQ3fK896gvPOPkkTwcF/Efq8Bv0NTWDtRZBaobOT5FaiVG\nDwFlacVxQa/s3YIElgEckbfrr0LrpCjkdWpfcM/iMQKBgQDu5y4xmUJ3VocvEbqE\nysRFRHF1Oemag+qjGmv99MNJrFOH/Wldm/lTuVTpxa81OBty07pwQJnLW6Z1rsxk\nl0wCef2aZvIYXTjIhPXQwG5KgbkrrLYuUyR7HETGeoAwIq+pqN3FCPDCVAMME7JY\nWJDl4fAYeD380kNUu0iHdwkK+QKBgQDRlw0VUd4unpLYbkzqiDLSqfKSWWLpOexU\n8oXCNPoAj/GHExDlRVWIL731FvM0LmMGFfCpVMu0Ecf36Q6wGsngavQf5tKLruVB\nbtWZkyigFWp0sGIdPtFmGGs97nf7xy0BuQ90+WIjM31vKV1ZFpfkTBNN/Z2lofJQ\ntT4aVEBI8wKBgFpmck1kYAlGXcsK21hqXdCUMJaaPnIwnrXvRpQHbWpQYh9gXeGF\nJthuldoL6tupioFt6uuVFl0kJh378e3Sbnm1bahichOUGuuNnHLMji91XPtQ1HM9\nFN3c+Y1dR2pvhacediSb2HbAUZLdVSwm/1VtpGut/E7RxZanc6+G9I4JAoGALrXp\ndozuZZl1xMKgZczA9u5lX3SIdM4x+6SpZuUDqshp3d7D7zUKoPVy8oKQ5VpJO3v8\nTODXHWSxGnFYkqsFvvxXOBzrY7Iw6epXtIh1j2f2d9cvprDvXj+m9wCEwRpcz3t9\nFGbYFlxNYk7nvQkqBPlnfAQ/9EApjw81rgyE3z0CgYAMyGHneANBl6j62c1DagYC\niwFEu8ujldpCqd3WKzEkUlPHpg2v7Mo9Xq+8TqrMP1gkir4+DEv9nd282bcxPKKp\nbpSqf16vpjzjTE+OJDhDbHLVYBqI2ZOdJ2kWEODUxNTTbMyUZ0ydkjS/y+rIh/8e\nSGIJUDG9frW4V7XkfLpadg==\n-----END PRIVATE KEY-----\n",
+                        "rawToken": {
+                            "access_token": "ya29.c.c0ASRK0GaloU8VpwnQGPXgxtxqzcRjw5AHoioMvLwI9Bbi_zWxzK6fbXGtJ6wk-WJm1Ei5uB_odh-QfrWMv-avp2x1SIOYewHpZdcqM_6sHVseMWcxzlxI_zGCOqP5pEWLoBoRkB0YWbJ8RPRDmSnat64vC43RxCt3HugpMKaZm2KwfKTOnVljGl3M20YRCkZlLjIgVLVYVQpt_OhKSwnte-8EqtR0F6L36HBfVzqgIIx5zb1QzIXZxccwdBysT-o3TtEXKJhCl2_IUd2eIKqrbeeTo5E9vAag-a2HAtmw3XfC1LMrW9uyC-J_dPKhOitqsGf4jSmGZuY3jqriATUUrbo4q9i6y7QFDKbhjF1AjC3nkcJYLLgOtUI0yAgIe0MT392DS1tjXsBl3p7V1l5nob6V0FuUiacldQ_7vlaJ3M_hbomU74bd_BoOqqtXBrjY-V8tldjxIVWuYIpy5folQywrlUJVdWh0opfrYtz91xaV_YSJ_8Rsee-bpR6fv4yw-wcQFcBkYrkezZ3nMtnhs_uqfnaiBjtpOtfxOJfQtXupZmodVdaoXubh1rYnbs360gFY7c8bOex-mFnvRFexi7_8x-Vwv6W-ZfQtjmOSY27aW17rJVrg3m11ZbrpltmQjqq3yJISFWhiS74rrMv6JzQ6i8a82Z3xZ8x2lYFzuMnlfMJltoQ-7xt3Z3Vph6pwXakzRj568au48JI8Bo6gfV6nXMIeoebSR-i7t_9wuOF3YRQVgFchB58fkIMXg0Jmt5Ok8cpzqv6o14dihVVg4RfnYXteexow91YdQjZlrj_7aVtgy8beQUnmJMxph7aekMIorBuqRzv_d1qUY0jUj4Vg7q2sQvnXYdyOxMlXic2Xilk9dbbIsWm5mwz0a6yMkwrpuVvVmM1goJhw4tJ4pnl4jMxJkJuvjlsMqZXYz19sqxdRw86fYo-JvVgIfq9ioWmOqRqFVRm-m88FtFRShfF6roRfouazhM13vcqM-bQz7gkmQsawibR",
+                            "expires_in": 3599,
+                            "token_type": "Bearer"
+                        },
+                        "iss": "firebase-adminsdk-tmymk@sdrive-cd153.iam.gserviceaccount.com",
+                        "scope": "https://www.googleapis.com/auth/iam https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/devstorage.full_control",
+                        "expiresAt": 1730746635000
+                    }
+                },
+                "_cachedProjectId": "sdrive-cd153",
+                "scopes": [
+                    "https://www.googleapis.com/auth/iam",
+                    "https://www.googleapis.com/auth/cloud-platform",
+                    "https://www.googleapis.com/auth/devstorage.full_control"
+                ]
+            },
+            "acl": {
+                "OWNER_ROLE": "OWNER",
+                "READER_ROLE": "READER",
+                "WRITER_ROLE": "WRITER"
+            },
+            "retryOptions": {
+                "autoRetry": true,
+                "maxRetries": 3,
+                "retryDelayMultiplier": 2,
+                "totalTimeout": 600,
+                "maxRetryDelay": 64,
+                "idempotencyStrategy": 1
+            }
+        },
+        "acl": {
+            "owners": {},
+            "readers": {},
+            "writers": {},
+            "pathPrefix": "/acl",
+            "default": {
+                "owners": {},
+                "readers": {},
+                "writers": {},
+                "pathPrefix": "/defaultObjectAcl"
+            }
+        },
+        "iam": {
+            "resourceId_": "buckets/[object Promise]"
+        },
+        "instanceRetryValue": true
+    },
+    "isPublic": false
+}
